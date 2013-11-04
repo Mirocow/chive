@@ -1,6 +1,6 @@
 /protected/runtime/sessions/*
 /protected/runtime/*
-/assets/*
+/web/assets/*
 /.buildpath
 /.project
 /.settings
@@ -8,3 +8,4 @@
 /protected/runtime/user-config/*
 /protected/extensions/sqlquery_old
 /archiveExport.sh
+vendor/*

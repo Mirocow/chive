@@ -51,7 +51,7 @@ return array(
 		'session' => array(
 			'class' => 'ChiveHttpSession',
 			'sessionName' => 'chiveSession',
-			'savePath' => 'protected/runtime/sessions',
+			'savePath' => '../protected/runtime/sessions',
 			'cookieParams' => array(
 				 'path' => ''
 			),
