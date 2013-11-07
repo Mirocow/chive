@@ -1,7 +1,7 @@
-<?php CHtml::generateRandomIdPrefix(); ?>
+<?php ChiveCHtml::generateRandomIdPrefix(); ?>
 <?php if(!$schema->isNewRecord && $isSubmitted) { ?>
 	<script type="text/javascript">
-	var idPrefix = '<?php echo CHtml::$idPrefix; ?>';
+	var idPrefix = '<?php echo ChiveCHtml::$idPrefix; ?>';
 	var row = $('#' + idPrefix).closest("tr").prev();
 	row.find("td dfn.collation").html("<?php echo $schema->DEFAULT_COLLATION_NAME; ?>").attr("title", "<?php echo Collation::getDefinition($schema->DEFAULT_COLLATION_NAME); ?>");
 	$('#' + idPrefix).parent().slideUp(500, function() {
@@ -11,7 +11,7 @@
 	</script>
 <?php } ?>
 
-<?php echo CHtml::form('', 'post', array('id' => CHtml::$idPrefix)); ?>
+<?php echo CHtml::form('', 'post', array('id' => ChiveCHtml::$idPrefix)); ?>
 	<h1>
 		<?php echo Yii::t('core', ($schema->isNewRecord ? 'addSchema' : 'editSchema')); ?>
 	</h1>

@@ -1,4 +1,4 @@
-<?php echo CHtml::form('', 'post', array('id' => CHtml::$idPrefix)); ?>
+<?php echo CHtml::form('', 'post', array('id' => ChiveCHtml::$idPrefix)); ?>
 	<h1>
 		<?php echo Yii::t('core', ($trigger->isNewRecord ? 'addTrigger' : 'editTrigger')); ?>
 	</h1>

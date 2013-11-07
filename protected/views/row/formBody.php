@@ -36,8 +36,8 @@
 		<td>
 			<?php $this->widget('InputField', array(
 	   'row' => $row, 'column' => $column, 'htmlOptions' => array(
-		'onchange' => '$(this).val() ? $("#' . CHtml::$idPrefix . $columnName . '_null").attr("checked", "").change() : void(0);',
-		'onkeyup' => '$(this).val() ? $("#' . CHtml::$idPrefix . $columnName . '_null").attr("checked", "").change() : void(0);',
+		'onchange' => '$(this).val() ? $("#' . ChiveCHtml::$idPrefix . $columnName . '_null").attr("checked", "").change() : void(0);',
+		'onkeyup' => '$(this).val() ? $("#' . ChiveCHtml::$idPrefix . $columnName . '_null").attr("checked", "").change() : void(0);',
 		'tabIndex' => $i,
 	)
   )); ?>

@@ -1,4 +1,4 @@
-<?php echo CHtml::form('', 'post', array('id' => CHtml::$idPrefix)); ?>
+<?php echo CHtml::form('', 'post', array('id' => ChiveCHtml::$idPrefix)); ?>
 	<?php echo CHtml::hiddenField('type', $type); ?>
 	<h1>
 		<?php echo Yii::t('core', ($routine->isNewRecord ? 'add' : 'edit') . ucfirst($type)); ?>
